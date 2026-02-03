@@ -12,7 +12,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-areas: "header" "footer";
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 75% 25%;
 }
 
 header {
@@ -24,14 +24,88 @@ header {
 }
 
 .sky {
-  background-color: rgb(41, 68, 223);
+  background-color: rgb(37, 189, 194);
 }
 
-.sky:hover {
+.brown {
+  background-image: url("../img/soil.png");
+}
+
+.earth {
+  background-image: url("../img/download.jpg");
+}
+
+.tree {
+  background-image: url("../img/tree.png");
+}
+
+.grass {
+  background-image: url("../img/grass.png");
+}
+
+.leaves {
+  background-image: url("../img/leaves.png");
+}
+
+.sky:hover,
+.brown:hover,
+.earth:hover,
+.tree:hover,
+.leaves:hover,
+.grass:hover {
   outline: white;
   border: 1px solid black;
 }
 
 footer {
   grid-area: footer;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#sword img {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  padding: 3px 3px;
+}
+#pickaxc img {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  padding: 3px 3px;
+}
+#shovel img {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  padding: 3px 3px;
+}
+#axe img {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  padding: 3px 3px;
+}
+#box img {
+  height: 200px;
+  width: 250px;
+}
+
+#tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

@@ -181,3 +181,16 @@ footer {
   width: 20px;
   margin-bottom: 10px;
 } */
+
+.amount {
+  color: white;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount h2 {
+  color: white;
+}

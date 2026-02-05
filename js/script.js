@@ -365,27 +365,167 @@ function storeOpen(x) {
   }
 }
 
+let userMony = 1000;
+
 function inStore(x) {
   if (x.className === "dirt2") {
     document.body.style.cursor = "URL(../img/soil.png) 8 8, auto";
     tool = "dirt";
+    if (userMony >= 50) {
+      inventory.dirt += 1;
+      if (inventory.dirt === 1) {
+        const element = document.createElement("button");
+        element.addEventListener("click", boxClick);
+        element.className = "dirt1";
+        element.style.backgroundImage = "url(../img/soil.png)";
+        element.style.marginTop = "20px";
+        element.style.marginLeft = "20px";
+        element.style.height = "100px";
+        element.style.width = "100px";
+        element.style.display = "flex";
+        element.style.justifyContent = "center";
+        element.style.alignItems = "center";
+        element.style.fontSize = "30px";
+        element.style.color = "white";
+        inventory1.append(element);
+      }
+      if (inventory.dirt >= 1) {
+        const dirt1 = document.querySelector(".dirt1");
+        dirt1.innerText = inventory.dirt;
+      }
+      userMony -= 50;
+      const amount = document.querySelector(".amount");
+      amount.innerText = userMony;
+    } else {
+      return "not enof mony to buy";
+    }
   }
   if (x.className === "grass2") {
     document.body.style.cursor = "URL(../img/grass.png) 8 8, auto";
     tool = "grass";
+    if (userMony >= 95) {
+      inventory.grass += 1;
+      if (inventory.grass === 1) {
+        const element = document.createElement("button");
+        element.addEventListener("click", boxClick);
+        element.className = "grass1";
+        element.style.backgroundImage = "url(../img/grass.png)";
+        element.style.marginTop = "20px";
+        element.style.marginLeft = "20px";
+        element.style.height = "100px";
+        element.style.width = "100px";
+        element.style.display = "flex";
+        element.style.justifyContent = "center";
+        element.style.alignItems = "center";
+        element.style.fontSize = "30px";
+        element.style.color = "white";
+        inventory1.append(element);
+      }
+      if (inventory.grass >= 1) {
+        const dirt1 = document.querySelector(".grass1");
+        dirt1.innerText = inventory.grass;
+      }
+      userMony -= 95;
+      const amount = document.querySelector(".amount");
+      amount.innerText = userMony;
+    } else {
+      return "not enof mony to buy";
+    }
   }
   if (x.className === "leaves2") {
     document.body.style.cursor = "URL(../img/leaves.png) 8 8, auto";
     tool = "leaves";
+    if (userMony >= 70) {
+      inventory.leaves += 1;
+      if (inventory.leaves === 1) {
+        const element = document.createElement("button");
+        element.addEventListener("click", boxClick);
+        element.className = "leaves1";
+        element.style.backgroundImage = "url(../img/leaves.png)";
+        element.style.marginTop = "20px";
+        element.style.marginLeft = "20px";
+        element.style.height = "100px";
+        element.style.width = "100px";
+        element.style.display = "flex";
+        element.style.justifyContent = "center";
+        element.style.alignItems = "center";
+        element.style.fontSize = "30px";
+        element.style.color = "white";
+        inventory1.append(element);
+      }
+      if (inventory.leaves >= 1) {
+        const dirt1 = document.querySelector(".leaves1");
+        dirt1.innerText = inventory.leaves;
+      }
+      userMony -= 70;
+      const amount = document.querySelector(".amount");
+      amount.innerText = userMony;
+    } else {
+      return "not enof mony to buy";
+    }
   }
   if (x.className === "tree2") {
     document.body.style.cursor = "URL(../img/tree.png) 8 8, auto";
     tool = "wood";
+    if (userMony >= 90) {
+      inventory.wood += 1;
+      if (inventory.wood === 1) {
+        const element = document.createElement("button");
+        element.addEventListener("click", boxClick);
+        element.className = "wood";
+        element.style.backgroundImage = "url(../img/tree.png)";
+        element.style.marginTop = "20px";
+        element.style.marginLeft = "20px";
+        element.style.height = "100px";
+        element.style.width = "100px";
+        element.style.display = "flex";
+        element.style.justifyContent = "center";
+        element.style.alignItems = "center";
+        element.style.fontSize = "30px";
+        element.style.color = "white";
+        inventory1.append(element);
+      }
+      if (inventory.wood >= 1) {
+        const dirt1 = document.querySelector(".wood");
+        dirt1.innerText = inventory.wood;
+      }
+      userMony -= 90;
+      const amount = document.querySelector(".amount");
+      amount.innerText = userMony;
+    } else {
+      return "not enof mony to buy";
+    }
   }
   if (x.className === "stone2") {
     document.body.style.cursor = "URL(../img/download.jpg) 8 8, auto";
     tool = "stone";
+    if (userMony >= 75) {
+      inventory.stone += 1;
+      if (inventory.stone === 1) {
+        const element = document.createElement("button");
+        element.addEventListener("click", boxClick);
+        element.className = "stone";
+        element.style.backgroundImage = "url(../img/download.jpg)";
+        element.style.marginTop = "20px";
+        element.style.marginLeft = "20px";
+        element.style.height = "100px";
+        element.style.width = "100px";
+        element.style.display = "flex";
+        element.style.justifyContent = "center";
+        element.style.alignItems = "center";
+        element.style.fontSize = "30px";
+        element.style.color = "white";
+        inventory1.append(element);
+      }
+      if (inventory.stone >= 1) {
+        const dirt1 = document.querySelector(".stone");
+        dirt1.innerText = inventory.stone;
+      }
+      userMony -= 75;
+      const amount = document.querySelector(".amount");
+      amount.innerText = userMony;
+    } else {
+      return "not enof mony to buy";
+    }
   }
 }
-
-let userMony = 10000;

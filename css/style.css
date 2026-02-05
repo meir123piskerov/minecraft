@@ -109,3 +109,49 @@ footer {
   align-items: center;
   gap: 10px;
 }
+
+.reset-btn {
+  height: 100px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px solid black;
+  background-color: brown;
+  color: white;
+}
+.reset-btn a {
+  text-decoration: none;
+}
+
+.reset-btn h2 {
+  color: white;
+}
+
+.inventory {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  display: none;
+  margin-bottom: 50%;
+  margin-right: 30%;
+  gap: 10px;
+}
+/* 
+.element {
+  content: attr(count);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  top: -15px;
+  right: -15px;
+  z-index: 1;
+} */

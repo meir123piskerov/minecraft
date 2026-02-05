@@ -10,26 +10,26 @@
     <header id="header"></header>
 
     <footer id="footer">
+      <div class="inventory" id="inventory"></div>
       <div id="tools">
-        <div id="box">
+        <div id="box" onclick="gameInventory(this)">
           <a href="#"><img src="../img/box.png" alt="" /></a>
         </div>
-        <div id="pickaxc">
-          <a href="#" onclick="toolClick(this)"
-            ><img src="../img/pickaxc.png" alt=""
-          /></a>
+        <div id="pickaxc" onclick="toolClick(this)">
+          <a href="#"><img src="../img/pickaxc.png" alt="" /></a>
         </div>
-        <div id="shovel">
+        <div id="shovel" onclick="toolClick(this)">
           <a href="#"><img src="../img/shovel.png" alt="" /></a>
         </div>
-        <div id="axe">
-          <a href="#" onclick="toolClick(this)"
-            ><img src="../img/axc.png" alt=""
-          /></a>
+        <div id="axe" onclick="toolClick(this)">
+          <a href="#"><img src="../img/axc.png" alt="" /></a>
         </div>
-        <div id="sword">
+        <div id="sword" onclick="toolClick(this)">
           <a href="#"><img src="../img/sword.png" alt="" /></a>
         </div>
+        <button type="reset" class="reset-btn">
+          <a href="index.html"><h2>reset game</h2></a>
+        </button>
       </div>
     </footer>
 

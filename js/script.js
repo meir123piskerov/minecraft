@@ -352,3 +352,40 @@ function gameInventory() {
     }
   }
 }
+let openStore = true;
+let store = document.getElementById("store");
+
+function storeOpen(x) {
+  if (openStore) {
+    store.style.display = "flex";
+    openStore = false;
+  } else {
+    store.style.display = "none";
+    openStore = true;
+  }
+}
+
+function inStore(x) {
+  if (x.className === "dirt2") {
+    document.body.style.cursor = "URL(../img/soil.png) 8 8, auto";
+    tool = "dirt";
+  }
+  if (x.className === "grass2") {
+    document.body.style.cursor = "URL(../img/grass.png) 8 8, auto";
+    tool = "grass";
+  }
+  if (x.className === "leaves2") {
+    document.body.style.cursor = "URL(../img/leaves.png) 8 8, auto";
+    tool = "leaves";
+  }
+  if (x.className === "tree2") {
+    document.body.style.cursor = "URL(../img/tree.png) 8 8, auto";
+    tool = "wood";
+  }
+  if (x.className === "stone2") {
+    document.body.style.cursor = "URL(../img/download.jpg) 8 8, auto";
+    tool = "stone";
+  }
+}
+
+let userMony = 10000;
